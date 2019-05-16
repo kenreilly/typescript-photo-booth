@@ -1,5 +1,4 @@
 :root {
-	
 	--root-metric: 16px;
 	--footer-height: calc(var(--root-metric) * 7);
 	--button-height: calc(var(--root-metric) * 5);
@@ -18,14 +17,9 @@ body {
 	background: black;
 }
 
-main {
+main, video {
 	width: 100%;
-	flex: calc(1 - var(--footer-flex));
-}
-
-video {
 	height: 100%;
-	width: 100%;
 }
 
 footer {
