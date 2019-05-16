@@ -20,9 +20,11 @@ abstract class PhotoBooth {
 	static on_get_media = (stream: MediaStream) => {
 
 		let video = document.querySelector('video')
-
+		let track = stream.getVideoTracks[0]
+		
 		video.srcObject = stream
 		video.onloadedmetadata = () => { video.play() }
+		track.applyConstraints({ advanced: [{torch: true}]  });
 	}
 
 	static on_error = (reason: any) => { console.log(reason) }
