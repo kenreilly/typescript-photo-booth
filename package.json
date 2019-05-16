@@ -1,0 +1,24 @@
+{
+  "name": "typescript-photo-booth",
+  "version": "0.1.0",
+  "description": "Simple photo booth application HTML, CSS, and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenreilly/typescript-photo-booth.git"
+  },
+  "keywords": [
+    "Photo",
+    "Booth",
+    "TypeScript"
+  ],
+  "author": "Kenneth Reilly <kenneth@innovationgroup.tech>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kenreilly/typescript-photo-booth/issues"
+  },
+  "homepage": "https://github.com/kenreilly/typescript-photo-booth#readme"
+}

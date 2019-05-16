@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta property="og:title" content="TypeScript Photo Booth Demo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kenreilly.github.io/typescript-photo-booth/" />
+    <meta property="og:image" content="https://kenreilly.github.io/typescript-photo-booth/images/preview.png" />
+   
+	<title>TypeScript Photo Booth</title>
+
+	<link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <script type="module" src="./build/photobooth.js"></script>
+</head>
+<body>
+
+	<main>
+		<video></video>
+	</main>
+
+	<footer>
+
+		<button name="take_photo">
+			<svg viewBox="-1 -1 2 2">
+				<circle cx="0" cy="0" r=".6"></circle>
+			</svg>
+		</button>
+
+		<button name="swap_camera">
+			<svg viewBox="-1 -1 2 2">
+				<polyline points="-.2,-.6 -.7,0 -.2,.6"></polyline>
+				<polyline points=".2,-.6 .7,0 .2,.6"></polyline>
+			</svg>
+		</button>
+
+	</footer>
+
+</body>
+</html>

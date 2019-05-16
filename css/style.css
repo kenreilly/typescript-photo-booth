@@ -1,0 +1,75 @@
+:root {
+	
+	--root-metric: 16px;
+	--footer-height: calc(var(--root-metric) * 7);
+	--button-height: calc(var(--root-metric) * 5);
+}
+
+html, body { 
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: Flex;
+	flex-flow: column nowrap;
+	background: black;
+}
+
+main {
+	width: 100%;
+	flex: calc(1 - var(--footer-flex));
+}
+
+video {
+	height: 100%;
+	width: 100%;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: var(--footer-height);
+	display: flex;
+	flex-flow: row nowrap;
+	align-content: stretch;
+	align-items: center;
+	justify-content: space-evenly;
+	background: linear-gradient(2.7rad, #1a1a1a, #424242);
+	border-top: 1px solid #6a6a6a;
+}
+
+button {
+	flex: .24;
+	padding: 0;
+	height: var(--button-height);
+	background: #02030440;
+	border: 2px solid #7070a0;
+	border-radius: 8px;
+	font-size: 24px;
+	color: #efefef;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #20304040;
+	border: 2px solid #d0e0f0;
+}
+
+button:active {
+	color: #606060;
+}
+
+button > svg {
+	width: 100%;
+	height: 100%;
+}
+
+button > svg > * {
+	stroke: #a0b0c0;
+	fill: #0a0a1a2a;
+	stroke-width: 0.06;
+}
