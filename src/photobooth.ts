@@ -82,7 +82,7 @@ abstract class PhotoBooth {
 
 	static switch_cam() {
 
-		PhotoBooth.mode = CameraMode.User ? CameraMode.Environment : CameraMode.User
+		PhotoBooth.mode = (PhotoBooth.mode == CameraMode.User) ? CameraMode.Environment : CameraMode.User
 		PhotoBooth.init_camera()
 	}
 }

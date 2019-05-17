@@ -3,3 +3,6 @@ export var CameraMode;
     CameraMode["User"] = "user";
     CameraMode["Environment"] = "environment";
 })(CameraMode || (CameraMode = {}));
+export class Defaults {
+}
+Defaults.width = 640;
